@@ -44,7 +44,7 @@ def getTarget():
         count = 0
         with open('save/result.txt', 'w') as targets:
             for i in result['results']:
-                targets.write(i[1] + '\n')
+                targets.write(i[1] + ':' + i[2] + '\n')
                 print(i[1])
                 count += 1
             print("搜索结果有" + str(count) + "条，已保存")
